@@ -1,16 +1,16 @@
 package com.loggy.routes
 
-import com.google.gson.Gson
-import com.loggy.models.User
+
+import com.loggy.domains.login.models.User
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-
+/*
 private val users = mutableListOf(
-    User(0, "Diego", "Sánchez","die-san", "die.san@enterprise.com", "d3v3l0p3r", "70045040"),
+    User(0, "Diego", "Sánchez","die-san", "die.san@enterprise.com", "d3v3l0per", "70045040"),
     User(0, "Developer", "UPC","developer.moviles", "developer.moviles@enterprise.com", "d3v3l0p3r", "70045041"),
 
 )
@@ -58,3 +58,4 @@ fun Route.userRouting() {
         }
     }
 }
+*/

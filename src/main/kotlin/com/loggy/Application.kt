@@ -9,15 +9,15 @@ import io.ktor.server.plugins.contentnegotiation.*
 
 
 fun main() {
-    embeddedServer(Netty, port = 8080,
-        host = "127.0.0.1",
-        module = Application::module)
-            .start(wait = true)
+    embeddedServer(
+        Netty,
+        port = 9292,
+        host = "0.0.0.0",
+        module = Application::module
+    ).start(wait = true)
 }
 
 fun Application.module() {
-
-
     configureSerialization()
     configureRouting()
 }
